@@ -103,5 +103,3 @@ Die Warenkorbanzahl badge ist auch noch nicht fertig und ist erstmal nur ein Kre
 Ich muss noch für den eigentlichen Warenkorb einen Button finden über eine Seite 
 
 -------------------------------------------------------------------------------------------------
-
-anfang des tages simulation hast du das hie
