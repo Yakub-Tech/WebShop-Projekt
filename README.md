@@ -104,4 +104,4 @@ Ich muss noch für den eigentlichen Warenkorb einen Button finden über eine Sei
 
 -------------------------------------------------------------------------------------------------
 
-anfang des tages simulation hast du das hie
+anfang des tages
