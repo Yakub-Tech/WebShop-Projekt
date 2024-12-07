@@ -1,0 +1,136 @@
+#RegistrierungFormular {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-width: 2px;
+    border-color:#044535;
+    border-style: solid;
+}
+
+#anrede {
+    text-align: left;
+}
+
+#Rahmen{
+    text-align: center;
+    background: #ffffff;
+    padding: 1px;
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid transparent;
+    border-style: solid;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Inhalte linksbündig ausrichten */
+    width: 100%;
+    gap: 10px
+    ;
+}
+
+label {
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 0; 
+    padding-bottom: 2px; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-left: 0;
+    
+}
+
+
+
+.input-small {
+
+    max-width: 100px; /* Breite für das kleine Feld */
+    width: 100%; /* Sicherstellen, dass es responsiv bleibt */
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+label[for="datenschutz"] {
+    
+    align-items: center; /* Vertikale Ausrichtung */
+    gap: 10px; /* Abstand zwischen Checkbox und Text */
+    font-size: 14px;
+    text-align: left; /* Text linksbündig */
+    line-height: 1.5; /* Zeilenhöhe für besseren Lesefluss */
+    width: 100%; /* Stellt sicher, dass das Label die Breite des Containers einnimmt */
+}
+
+input[type="checkbox"] {
+    margin: 0; /* Entfernt unnötige Ränder */
+    width: auto; /* Stellt sicher, dass Checkbox nicht skaliert wird */
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #044535;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #03632e;
+}
+
+
+
+
+
+
+
+
+.Text-unter-login {
+    width: 100%;
+    text-align: center; /* Zentriert den Text */
+    font-size: 14px;
+    margin-top: 15px; /* Abstand nach oben */
+    line-height: 1.5;
+}
+
+.Text-unter-login a {
+    text-decoration: none;
+    color: black; /* Farbe des Links */
+    font-weight: normal;
+}
+
+.Text-unter-login a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+

@@ -1,0 +1,29 @@
+.Textfeld {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Textfeld h2 {
+    color: #044535; /* Dunkles Grün */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.Textfeld p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.Textfeld a {
+    color: #03632e; /* Linkfarbe */
+    text-decoration: none;
+}
+
+.Textfeld a:hover {
+    text-decoration: underline;
+}

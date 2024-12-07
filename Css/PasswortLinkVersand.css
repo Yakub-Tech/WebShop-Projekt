@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mindestens die Höhe des Viewports */
+    margin: 0; /* Entfernt Standardabstände */
+}
+
+
+
+#EmailWurdeVersand {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Zentriert den Container horizontal */
+    width: 90%; /* Nutzt 90% der Seitenbreite */
+    max-width: 600px; /* Begrenzung der Breite */
+    border-width: 2px;
+    border-color: #044535;
+    border-style: solid;
+    flex: 1; /* Nimmt den restlichen verfügbaren Platz ein */
+}
+
+#LinkAnmelden {
+    display: inline-block; /* Ändert die Darstellung, damit margin funktioniert */
+    margin-top: 20%;
+    font-size: 250%;
+    color: black; /* Linkfarbe im normalen Zustand */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+#LinkAnmelden:hover {
+    text-decoration: underline; /* Fügt Unterstreichung beim Hover hinzu */
+}

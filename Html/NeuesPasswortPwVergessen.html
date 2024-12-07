@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstTimeLogin</title>
+    <link rel="stylesheet" href="/Css/LogoObenZentriert.css">
+    <link rel="stylesheet" href="/Css/BackgroundEbene0.css">
+    <link rel="stylesheet" href="/Css/Footer.css">
+    <link rel="stylesheet" href="/Css/NeuesPasswort.css">
+</head>
+<body>
+    <div id="Shop_Logo">
+        <img src="/Images/Shop_Logo.png" alt="Shop Logo">
+    </div>
+
+    <div id="PasswortVergessen">
+        <h2>Legen Sie ein neues eigenes Passwort fest</h2>
+        <p id="Text">
+           Ihr Passwort wurde erfolgreich zurückgesetzt ! <br>
+            Bitte legen Sie ein neues persönliches Passwort fest, um Ihr Konto zu sichern.
+        </p>
+        <form>
+            <label for="password"> Neues Passwort:</label>
+            <input type="password" id="password" name="password" placeholder="Passwort eingeben"
+                   pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{9,}"
+                   title="Das Passwort muss mindestens 9 Zeichen lang sein, einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten."
+                   required>
+                   
+            <label for="confirm-password">Neues Passwort bestätigen:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Passwort bestätigen"
+                   pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{9,}"
+                   title="Die Passwörter müssen übereinstimmen."
+                   required>
+            <button type="submit">Senden</button> <br>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="Html/Impressum.html">Impressum</a>
+                <a href="/Html/Kontakt.html">Kontakt</a>
+                <a href="/Html/Datenschutzerklärung.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
+                <a href="/Html/Agb.html" target="_blank" rel="noopener noreferrer">AGB</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Lushame. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

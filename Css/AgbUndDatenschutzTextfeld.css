@@ -1,0 +1,31 @@
+body {
+    display: flex; /* Flexbox für Zentrierung */
+    flex-direction: column; /* Elemente vertikal anordnen */
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+    height: 100vh; /* Gesamte Höhe des Viewports */
+    margin: 0; /* Entfernt Standardabstände */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    font-family: Arial, sans-serif; /* Schriftart */
+}
+
+h1 {
+    margin-bottom: 20px; /* Abstand unter der Überschrift */
+    font-size: 24px; /* Schriftgröße der Überschrift */
+    color: #333; /* Farbe der Überschrift */
+}
+
+.scrollable-text {
+    width: 90%; /* Dynamische Breite basierend auf der Fenstergröße */
+    max-width: 800px; /* Maximale Breite des Feldes */
+    height: 50%; /* Dynamische Höhe basierend auf der Fenstergröße */
+    max-height: 400px; /* Maximale Höhe */
+    overflow: auto; /* Scrollbalken bei Bedarf anzeigen */
+    border: 1px solid #ccc; /* Rahmen */
+    padding: 15px; /* Innenabstand */
+    background-color: #ffffff; /* Hintergrundfarbe */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+    font-size: 14px; /* Schriftgröße */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+}

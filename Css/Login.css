@@ -1,0 +1,76 @@
+#LoginFormular {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-width: 2px;
+    border-color:#044535;
+    border-style: solid;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px; /* Abstand zwischen den Form-Gruppen */
+}
+
+label {
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 0; /* Kein Abstand */
+    padding-bottom: 2px; /* Abstand von 2 Millimetern */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #044535;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #03632e;
+}
+
+.Text-unter-login {
+    width: 100%;
+    max-width: 300px;
+    text-align: left; /* Links ausrichten */
+    font-size: 14px;
+    margin-top: 10px; /* Abstand oberhalb */
+    line-height: 1.5;
+}
+
+.Text-unter-login a {
+    text-decoration: none; /* Entfernt Unterstreichung */
+    color: black; /* Passende Farbe */
+    font-weight: normal;
+}
+
+.Text-unter-login a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+}
