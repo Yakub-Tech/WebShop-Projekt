@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikelübersicht</title>
+    <link rel="stylesheet" href="/Css/Header.css">
+    <link rel="stylesheet" href="/Css/LogoLinksHeader.css">
+    <link rel="stylesheet" href="/Css/Footer.css">
+    <link rel="stylesheet" href="/Css/Artikelübersicht.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Linker Bereich -->
+            <div class="header-left">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <img src="/Images/Shop_Logo.png" alt="Shop Logo" class="logo">
+                </div>
+
+                <!-- Mitgliederanzahl -->
+                <div class="members-container">
+                    <span id="members-count">Online: 0</span>
+                </div>
+            </div>
+
+            
+            <!-- Rechter Bereich -->
+            <div class="header-right">
+                
+                <!-- Warenkorbanzahl -->
+                <div class="cart-badge">
+                    <span id="cart-count">0</span>
+                </div>
+
+
+                <!-- Warenkorb -->
+                <div class="cart-container">
+                    <button class="cart-button">Warenkorb</button>
+                </div>
+
+                <!-- Mein Konto -->
+                <div class="account-container">
+                    <button class="account-button">Mein Konto</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Artikelfilter -->
+    <nav class="filter-nav">
+        <ul>
+            <li><a href="#">Alle Artikel</a></li>
+            <li><a href="#">Jacken</a></li>
+            <li><a href="#">Hosen</a></li>
+            <li><a href="#">Oberteile</a></li>
+            <li><a href="#">Rucksäcke</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Artikelliste -->
+    <main class="article-overview">
+        <!-- Beispielartikel -->
+        <div class="article-box">
+            <img src="https://via.placeholder.com/150" alt="Artikelbild">
+            <h3>Artikelname</h3>
+            <p>Artikelnr: 12345</p>
+            <p>Preis: 40€</p>
+            <div class="quantity-control">
+                <button class="minus-button">-</button>
+                <input type="number" value="1" min="1">
+                <button class="plus-button">+</button>
+            </div>
+            <button class="add-to-cart">In den Warenkorb</button>
+        </div>
+
+        <div class="article-box">
+            <img src="https://via.placeholder.com/150" alt="Artikelbild">
+            <h3>Artikelname</h3>
+            <p>Artikelnr: 54321</p>
+            <p>Preis: 50€</p>
+            <div class="quantity-control">
+                <button class="minus-button">-</button>
+                <input type="number" value="1" min="1">
+                <button class="plus-button">+</button>
+            </div>
+            <button class="add-to-cart">In den Warenkorb</button>
+        </div>
+
+        <div class="article-box">
+            <img src="https://via.placeholder.com/150" alt="Artikelbild">
+            <h3>Artikelname</h3>
+            <p>Artikelnr: 435345</p>
+            <p>Preis: 550€</p>
+            <div class="quantity-control">
+                <button class="minus-button">-</button>
+                <input type="number" value="1" min="1">
+                <button class="plus-button">+</button>
+            </div>
+            <button class="add-to-cart">In den Warenkorb</button>
+        </div>
+        
+        
+    </main>   
+
+
+</body>
+</html>
+    

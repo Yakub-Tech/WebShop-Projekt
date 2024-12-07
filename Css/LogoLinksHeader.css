@@ -1,0 +1,11 @@
+#Shop_Logo {
+    width: 50px; /* Breite des Logos */
+    margin: 20px auto 0; /* Abstand oben (20px), zentriert durch auto links und rechts */
+    position: relative; /* Ermöglicht Feinanpassungen mit 'top', falls nötig */
+    border: 5px solid #044535; /* Kombiniert Breite, Stil und Farbe des Rahmens */
+    border-radius: 4px;
+}
+#Shop_Logo img {
+    width: 100%; /* Bild passt sich an die Breite des Containers an */
+    display: block; /* Entfernt Leerraum um das Bild */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="/Css/Registrieren.css">
+    <link rel="stylesheet" href="/Css/LogoObenZentriert.css">
+    <link rel="stylesheet" href="/Css/BackgroundEbene0.css">
+    <link rel="stylesheet" href="/Css/Footer.css">
+ </head>
+
+<body>
+    <div id="Shop_Logo">
+        <img src="/Images/Shop_Logo.png" alt="Shop Logo">
+    </div>
+
+    <div id="RegistrierungFormular">
+        <div id="Rahmen">
+            <form>
+
+                <h2>Registrierung</h2>
+
+                <label for="anrede">Anrede:</label>
+                <select id="anrede" name="anrede" required>
+                    <option value="">-</option>
+                    <option value="herr">Herr</option>
+                    <option value="frau">Frau</option>
+                    <option value="divers">Divers</option>
+                </select>
+
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" pattern="^[A-Za-zäöüßÄÖÜ\s]+$"
+                    title="Bitte geben Sie nur Buchstaben ein." required>
+
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname"
+                    pattern="^[A-Za-zäöüßÄÖÜ\s]+$" title="Bitte geben Sie nur Buchstaben ein." required>
+
+                <label for="email">E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+
+                <label for="strasse">Straße:</label>
+                <input type="text" id="strasse" name="strasse" placeholder="Straße und Hausnummer"
+                    pattern="^[A-Za-zäöüßÄÖÜ\s]+\s\d+[a-zA-Z]?$"
+                    title="Bitte geben Sie eine Straße gefolgt von einer Hausnummer ein, z. B. 'Musterstraße 123A'"
+                    required>
+
+
+
+                <label for="plz">PLZ:</label>
+                <input type="text" id="plz" name="plz" placeholder="12345" pattern="^\d{5}$" class="input-small"
+                    title="Bitte geben Sie eine gültige 5-stellige Postleitzahl ein." required>
+
+
+                <label for="stadt">Stadt:</label>
+                <input type="text" id="stadt" name="stadt" placeholder="Ihre Stadt" pattern="^[A-Za-zäöüßÄÖÜ\s]+$"
+                    title="Bitte geben Sie nur Buchstaben ein." required>
+
+                <label for="land">Land:</label>
+                <input type="text" id="land" name="land" placeholder="Ihr Land" pattern="^[A-Za-zäöüßÄÖÜ\s]+$"
+                    title="Bitte geben Sie nur Buchstaben ein." required>
+
+                <br>
+
+                <label for="datenschutz">
+                    <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                    Ich habe die <a href="/Html/Datenschutzbestimmung.html">Datenschutzbestimmungen</a> gelesen und
+                    akzeptiere sie.
+                </label>
+
+
+
+
+                <button type="submit">Registrieren</button>
+            </form>
+            <p class="Text-unter-login">
+                <a href="/Login.html"> Bereits registriert? Hier anmelden</a>
+            </p>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="Html/Impressum.html">Impressum</a>
+                <a href="/Html/Kontakt.html">Kontakt</a>
+                <a href="/Html/Datenschutzerklärung.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
+                <a href="/Html/Agb.html" target="_blank" rel="noopener noreferrer">AGB</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Lushame. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
