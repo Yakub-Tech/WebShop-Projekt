@@ -1,8 +1,13 @@
 .filter-nav {
-    background-color: #03632e;
-    color: #dadad8;
-    text-align: center;
-    padding: 10px 0;
+    background-color: #03632e; /* Hintergrundfarbe */
+    color: #dadad8; /* Textfarbe */
+    text-align: center; /* Zentrierter Textinhalt */
+    padding: 10px 0; /* Innenabstand */
+    position: fixed; /* Fixiert das Element */
+    top: 1; /* Fixiert am oberen Rand */
+    left: 0; /* Startet am linken Rand */
+    width: 100%; /* Breite über die gesamte Seite */
+    z-index: 1000; /* Stellt sicher, dass es vor anderen Elementen bleibt */
 }
 
 .filter-nav ul {
