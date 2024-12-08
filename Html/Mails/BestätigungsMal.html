@@ -1,0 +1,242 @@
+
+
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bestätigungs-E-Mail</title>
+
+
+        <style>
+
+            #Shop_Logo {
+                width: 250px; /* Breite des Logos */
+                margin: 20px auto 0; /* Abstand oben (20px), zentriert durch auto links und rechts */
+                margin-bottom: 2%;
+                position: relative; /* Ermöglicht Feinanpassungen mit 'top', falls nötig */
+                border: 5px solid #044535; /* Kombiniert Breite, Stil und Farbe des Rahmens */
+                border-radius: 4px;
+            }
+            #Shop_Logo img {
+                width: 100%; /* Bild passt sich an die Breite des Containers an */
+                display: block; /* Entfernt Leerraum um das Bild */
+            }
+            
+            /* Grundlayout für HTML und Body */
+            html, body {
+                height: 100%; /* Höhe des Viewports */
+                margin: 0;
+                display: flex;
+                flex-direction: column; /* Inhalt folgt in Spaltenrichtung */
+                padding: 0;
+                background-color: #dadad8;
+                font-family: Arial, sans-serif;
+                color: #333; /* Kontrastfarbe für Text */
+                
+            }
+
+                /* Header */
+            .email-header {
+                text-align: center;
+                padding: 20px 0;
+                background-color: #044535; /* Dunkelgrün */
+            }
+
+            .email-header img {
+                max-width: 150px;
+                height: auto;
+            }
+
+            .thank-you-message {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .order-number {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            
+            /* Tabelle */
+            .order-details {
+                margin-top: 20px;
+            }
+
+            .order-details table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .order-details th, .order-details td {
+                padding: 10px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+
+            .order-details th {
+                background-color: #f4f4f4;
+                font-weight: bold;
+            }
+
+            .total-row td {
+                font-weight: bold;
+            }
+
+      
+           /* Hauptinhalt */
+           #page-content {
+                flex: 1; /* Flexibles Füllen des verfügbaren Platzes */
+            }
+
+            main {
+                flex: 1; /* Füllt den restlichen Platz zwischen Header und Footer */
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+
+    
+            html, body {
+                height: 100%; /* Höhe des Viewports */
+                margin: 0;
+                display: flex;
+                flex-direction: column; /* Inhalt folgt in Spaltenrichtung */
+            }
+
+            /* Hauptinhalt */
+            #page-content {
+                flex: 1; /* Flexibles Füllen des verfügbaren Platzes */
+            }
+
+            /* Footer */
+            footer {
+                background-color: #044535; /* Dunkles Grün */
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                font-size: 14px;
+                border-top: 2px solid #03632e; /* Dünne obere Linie */
+                width: 100%;
+                margin-top: auto;
+
+            }
+
+            /* Footer-Container */
+            .footer-container {
+                max-width: 900px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px; /* Abstand zwischen Links und Copyright */
+            }
+
+            /* Footer-Links */
+            .footer-links {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap; /* Zeilenumbruch bei wenig Platz */
+            }
+
+            .footer-links a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+            .footer-links a:hover {
+                color: #aed581; /* Hellgrün bei Hover */
+            }
+
+            /* Copyright */
+            .footer-copy {
+                font-size: 12px;
+                opacity: 0.8; /* Leicht verblasst */
+            }
+
+    </style>
+
+    </head>
+    <body>
+
+         <!-- Header mit Firmenlogo -->
+         <div id="Shop_Logo">
+            <img src="/Images/Shop_Logo.png" alt="Shop Logo">
+        </div>
+
+    <!-- Hauptinhalt -->
+    <div id="page-content">
+        <!-- Dankesnachricht -->
+        <div class="thank-you-message">
+            <h1>Vielen Dank für Ihre Bestellung!</h1>
+        </div>
+
+        <!-- Bestellnummer -->
+        <div class="order-number">
+            <p><strong>Ihre Bestellnummer:</strong> 123456789</p>
+        </div>
+
+        <!-- Bestellübersicht -->
+        <main>
+        <div class="order-details">
+            <table>
+                <tr>
+                    <th>Artikelname</th>
+                    <th>Menge</th>
+                    <th>Einzelpreis</th>
+                    <th>Gesamt</th>
+                </tr>
+                <tr>
+                    <td>Artikel 1</td>
+                    <td>2</td>
+                    <td>20,00 €</td>
+                    <td>40,00 €</td>
+                </tr>
+                <tr>
+                    <td>Artikel 2</td>
+                    <td>1</td>
+                    <td>15,00 €</td>
+                    <td>15,00 €</td>
+                </tr>
+                <tr>
+                    <td>Artikel 3</td>
+                    <td>3</td>
+                    <td>25,00 €</td>
+                    <td>75,00 €</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: right;">Versand:</td>
+                    <td>5,00 €</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3" style="text-align: right;">Gesamtsumme:</td>
+                    <td>135,00 €</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="Html/Impressum.html">Impressum</a>
+                <a href="/Html/Kontakt.html">Kontakt</a>
+                <a href="/Html/Datenschutzerklärung.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
+                <a href="/Html/Agb.html" target="_blank" rel="noopener noreferrer">AGB</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Lushame. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
+    
