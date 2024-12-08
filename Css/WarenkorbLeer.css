@@ -1,0 +1,8 @@
+.Rahmen {
+    display: flex; /* Aktiviert Flexbox */
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    height: 100vh; /* Füllt die gesamte Höhe des Viewports */
+    text-align: center; /* Optional: Zentriert den Text innerhalb des Inhalts */
+    font-size: 200%;
+}

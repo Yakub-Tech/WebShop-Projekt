@@ -21,7 +21,7 @@ body {
 .logo-container {
     margin-right: 20px; /* Abstand zwischen Logo und Mitgliederanzahl */
     flex: 0 0 auto;
-}
+   
 
 .logo-container a {
     display: inline-block;
@@ -30,6 +30,8 @@ body {
 .logo {
     height: 40px;
     cursor: pointer;
+    border-radius: 5px;
+}
 }
 
 /* Online-Zahl */
@@ -58,19 +60,22 @@ body {
 }
 
 /* Warenkorb-Button */
-.cart-button-container {
-    flex: 0 0 auto;
+.cart-button:hover {
+    background-color: #03632e; /* Helleres Grün beim Hover */
 }
 
 .cart-button {
-    background-color: #dadad8;
-    color: #044535;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Macht den Link blockähnlich */
+    padding: 10px 15px; /* Abstand innerhalb des Buttons */
+    background-color: #044535; /* Dunkles Grün als Hintergrund */
+    color: white; /* Weiße Schriftfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    font-weight: bold; /* Fettere Schrift */
+    text-align: center; /* Zentriert den Text */
+    cursor: pointer; /* Ändert den Mauszeiger auf eine Hand beim Hover */
+    transition: background-color 0.3s ease; /* Sanfter Übergang der Hintergrundfarbe beim Hover */
 }
 
 .cart-button:hover {
@@ -89,19 +94,22 @@ body {
 }
 
 .account-button {
-    background-color: #dadad8;
-    color: #044535;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Macht den Button blockähnlich */
+    padding: 10px 15px; /* Gleiche Abstände wie bei .cart-button */
+    background-color: #044535; /* Dunkles Grün für den Hintergrund */
+    color: white; /* Weiße Schriftfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    border: none; /* Keine Rahmenlinie */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 16px; /* Gleiche Schriftgröße wie bei .cart-button */
+    font-weight: bold; /* Fettere Schrift */
+    text-align: center; /* Zentriert den Text */
+    cursor: pointer; /* Ändert den Mauszeiger auf eine Hand beim Hover */
+    transition: background-color 0.3s ease; /* Sanfter Übergang der Hintergrundfarbe beim Hover */
 }
 
 .account-button:hover {
-    background-color: #03632e;
-    color: #dadad8;
+    background-color: #03632e; /* Helleres Grün beim Hover */
 }
 
 /* Dropdown-Menü */

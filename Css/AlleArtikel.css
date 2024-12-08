@@ -1,0 +1,50 @@
+/* Styling für die Suchleiste */
+.search-container {
+    display: flex; /* Flexbox für nahtlose Ausrichtung */
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.25%;
+    margin-right: 0.25%;
+}
+
+/* Styling für das Eingabefeld */
+.search-container input[type="text"] {
+    height: 40px; /* Gleiche Höhe für das Eingabefeld */
+    font-size: 12px;
+    border: 1px solid #03632e;
+    border-right: none; /* Entfernt den rechten Rahmen, damit es mit dem Button verbunden wird */
+    border-radius: 5px 0 0 5px; /* Nur linke Ecken abrunden */
+    outline: none;
+    width: 25%;
+    box-sizing: border-box; /* Sorgt dafür, dass Padding und Border berücksichtigt werden */
+    padding: 0 10px; /* Nur Innenabstand horizontal hinzufügen */
+}
+
+/* Fokus-Effekt für das Eingabefeld */
+.search-container input[type="text"]:focus {
+    border-color: #044535;
+    box-shadow: 0 0 5px rgba(0, 69, 53, 0.5);
+}
+
+/* Styling für den Button */
+.search-button {
+    height: 40px; /* Gleiche Höhe wie das Eingabefeld */
+    background-color: white; /* Dunkles Grün */
+    color: white;
+    border: 1px solid #03632e; /* Gleicher Rahmen wie das Eingabefeld */
+    border-left: none; /* Entfernt den linken Rahmen, damit es nahtlos verbunden ist */
+    padding: 0 15px; /* Nur horizontaler Innenabstand */
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Nur rechte Ecken abrunden */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-Effekt für den Button */
+.search-button:hover {
+    background-color: #03632e; /* Helleres Grün */
+}
+
