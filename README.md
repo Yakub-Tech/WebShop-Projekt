@@ -103,3 +103,12 @@ Die Warenkorbanzahl badge ist auch noch nicht fertig und ist erstmal nur ein Kre
 Ich muss noch für den eigentlichen Warenkorb einen Button finden über eine Seite 
 
 -------------------------------------------------------------------------------------------------
+
+07.12.2024 Arber
+
+Habe den Header überarbeitet. Die Icons sind jetzt alle eigene Divs und Onlineanzahl und Anzahl-Warenkorb erstmal nur einfach Texte.
+
+Konto ist jetzt ein Dropdownmenü und die Artikelfilter hab ich "verteilt".
+
+Nicht wundern, der Footer ist oben weil ich noch keine main tags habe und der rutscht automatisch nach unten wenn da was ist,
+habs nicht hinbekommen dass der "Stickt" ohne dass da was ist.
