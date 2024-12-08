@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Daten und Seiteneinstellungen -->
+    <meta charset="UTF-8"> <!-- Zeichensatz: UTF-8 für Sonderzeichen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Layout -->
+    <title>Meine Bestellungen</title> <!-- Titel der Seite -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/Css/Header.css"> <!-- Header-Styling -->
+    <link rel="stylesheet" href="/Css/Footer.css"> <!-- Footer-Styling -->
+    <link rel="stylesheet" href="/Css/LogoLinksHeader.css"> <!-- Footer-Styling -->
+    <link rel="stylesheet" href="/Css/Bestellungen.css"> <!-- Neues Styling für Bestellungen -->
+</head>
+<body>
+    <!-- Header -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="/Html/HomeKarusell.html">
+                <img src="/Images/Shop_Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Online-Zahl -->
+        <div class="online-counter">
+            <span> Online: </span>
+        </div>
+
+        <!-- Warenkorb-Anzahl -->
+        <div class="cart-counter">
+            <span> </span>
+        </div>
+
+        <!-- Warenkorb-Button -->
+        <div class="cart-button-container">
+            <a href="/Html/Warenkorb.html" class="cart-button">Warenkorb</a>
+        </div>
+
+        <!-- Konto-Dropdown -->
+        <div class="account-menu-container">
+            <div class="account-menu">
+                <button class="account-button">Mein Konto</button>
+                <div class="dropdown-menu">
+                    <a href="/Html/MeineBestellungen.html">Meine Bestellungen</a>
+                    <a href="#">Abmelden</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+       <!-- Artikelfilter -->
+       <nav class="filter-nav">
+        <ul>
+            <li><a href="AlleArtikel.html">Alle Artikel</a></li>
+            <li><a href="Jacken.html">Jacken</a></li>
+            <li><a href="Hosen.html">Hosen</a></li>
+            <li><a href="Oberteile.html">Oberteile</a></li>
+            <li><a href="Rucksäcke.html">Rucksäcke</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bestellungen Container -->
+    <main class="bestellungen-container">
+        <h1>Meine Bestellungen</h1>
+
+       <!--- <?php
+        // Hier wird der PHP-Code eingefügt, der die Bestellungen abruft und die Nachricht bei leeren Bestellungen ausgibt
+        ?> 
+        
+        Wenn keine Bestellungen existieren, fügt das PHP-Skript die folgende HTML-Ausgabe ein:
+        
+        <div class="keine-bestellungen">
+        <p>Sie haben noch keine Bestellungen.</p>
+        </div>          -->
+
+        <!-- Beispiel für eine Bestellung -->
+        <div class="bestellung">
+            <h2>Bestellnummer: <span class="bestellnummer">123456</span></h2>
+
+            <!-- Bestellungsdetails -->
+            <div class="bestellungsdetails">
+                <!-- Artikel 1 -->
+                <div class="artikel">
+                    <img src="https://via.placeholder.com/150" alt="Artikelbild" class="artikel-bild">
+                    <div class="artikel-info">
+                        <h3 class="artikel-name">Artikelname 1</h3>
+                        <p>Artikelnummer: <span class="artikel-nummer">987654</span></p>
+                        <p>Stückzahl: <span class="artikel-stueckzahl">2</span></p>
+                        <p>Preis: <span class="artikel-preis">29,99 €</span></p>
+                    </div>
+                </div>
+
+                <!-- Artikel 2 -->
+                <div class="artikel">
+                    <img src="https://via.placeholder.com/150" alt="Artikelbild" class="artikel-bild">
+                    <div class="artikel-info">
+                        <h3 class="artikel-name">Artikelname 2</h3>
+                        <p>Artikelnummer: <span class="artikel-nummer">123456</span></p>
+                        <p>Stückzahl: <span class="artikel-stueckzahl">1</span></p>
+                        <p>Preis: <span class="artikel-preis">49,99 €</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gesamtsummenbereich -->
+            <div class="bestellung-summen">
+                <p>Gesamtpreis: <span class="gesamtpreis">109,97 €</span></p>
+                <p>Ermäßigung: <span class="ermaessigung">10%</span></p>
+                <p>Neuer Gesamtpreis: <span class="neuer-gesamtpreis">98,97 €</span></p>
+            </div>
+
+            <!-- Button für erneute Bestellung -->
+            <button class="erneut-bestellen-button">Erneut bestellen</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="Impressum.html">Impressum</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+                <a href="Agb.html">AGB</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Lushame. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
