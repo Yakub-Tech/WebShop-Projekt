@@ -1,3 +1,17 @@
+/* Grundlayout für HTML und Body */
+html, body {
+    height: 100%; /* Höhe des Viewports */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Inhalt folgt in Spaltenrichtung */
+}
+
+/* Hauptinhalt */
+#page-content {
+    flex: 1; /* Flexibles Füllen des verfügbaren Platzes */
+}
+
+/* Footer */
 footer {
     background-color: #044535; /* Dunkles Grün */
     color: white;
@@ -5,10 +19,11 @@ footer {
     text-align: center;
     font-size: 14px;
     border-top: 2px solid #03632e; /* Dünne obere Linie */
-    width: 100%; /* Über die gesamte Breite */
-    margin-top: 20px; /* Abstand zum oberen Element */
+    width: 100%;
+    margin-top: auto; /* Footer bleibt unten */
 }
 
+/* Footer-Container */
 .footer-container {
     max-width: 900px;
     margin: 0 auto;
@@ -18,10 +33,11 @@ footer {
     gap: 10px; /* Abstand zwischen Links und Copyright */
 }
 
+/* Footer-Links */
 .footer-links {
     display: flex;
-    gap: 15px; /* Abstand zwischen Links */
-    flex-wrap: wrap; /* Bricht Links um, wenn Platz begrenzt */
+    gap: 15px;
+    flex-wrap: wrap; /* Zeilenumbruch bei wenig Platz */
 }
 
 .footer-links a {
@@ -31,7 +47,12 @@ footer {
     transition: color 0.3s ease;
 }
 
+.footer-links a:hover {
+    color: #aed581; /* Hellgrün bei Hover */
+}
+
+/* Copyright */
 .footer-copy {
     font-size: 12px;
-    opacity: 0.8; /* Leicht verblasster Text */
+    opacity: 0.8; /* Leicht verblasst */
 }
