@@ -22,6 +22,7 @@ body {
     margin-right: 20px; /* Abstand zwischen Logo und Mitgliederanzahl */
     flex: 0 0 auto;
    
+}    
 
 .logo-container a {
     display: inline-block;
@@ -32,7 +33,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-}
+
 
 /* Online-Zahl */
 .online-counter {
