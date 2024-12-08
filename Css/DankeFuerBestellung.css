@@ -1,0 +1,53 @@
+/* Main-Inhalt */
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 200px); /* Passt sich der Seite an (abzgl. Header & Footer) */
+    background-color: #dadad8;
+}
+
+/* Nachricht-Div */
+.thank-you-message {
+    margin-bottom: 20px;
+}
+
+.thank-you-message h1 {
+    font-size: 36px;
+    color: #044535;
+}
+
+/* Bestellnummer-Div */
+.order-number {
+    margin-bottom: 30px;
+}
+
+.order-number p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Link-Div */
+.back-to-shop-container {
+    margin-top: 10px;
+}
+
+.back-to-shop {
+    font-size: 16px;
+    color: #044535;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #044535;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-shop:hover {
+    background-color: #044535;
+    color: #dadad8;
+}
