@@ -1,0 +1,128 @@
+/* Styling für den Artikel-Container */
+.artikel-container {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht Umbruch für Artikel */
+    gap: 20px; /* Abstand zwischen den Artikeln */
+    justify-content: center; /* Zentriert die Artikel */
+    padding: 20px;
+    
+}
+
+/* Einzelnes Artikel-Div */
+/* Einzelnes Artikel-Div */
+.artikel {
+    background-color: white; /* Schwarzer Hintergrund für den Artikel */
+    color: black; /* Weiße Schriftfarbe für besseren Kontrast */
+    border: 1px solid #ccc; /* Leichte Umrandung um den Artikel */
+    border-radius: 8px; /* Abgerundete Ecken */
+    padding: 15px; /* Innenabstand innerhalb des Artikels */
+    text-align: left;
+    max-width: 200px; /* Breite des Artikels */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Sanfter Hover-Effekt */
+}
+
+.artikel:hover {
+    transform: scale(1.05); /* Vergrößert das Div beim Hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Artikelbild */
+.artikel-bild {
+    width: 100%; /* Bild füllt den Artikel-Div */
+    border-radius: 5px;
+}
+
+/* Artikelname */
+.artikel-name {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+/* Artikelbeschreibung */
+.artikel-beschreibung {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Artikelpreis */
+.artikel-preis {
+    font-size: 16px;
+    font-weight: bold;
+    color: #03632e; /* Dunkelgrün für den Preis */
+    display: block;
+    margin: 10px 0;
+}
+
+/* Button für den Artikel */
+.artikel-button {
+    background-color: #044535;
+    width: 100%;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.artikel-button:hover {
+    background-color: #03632e; /* Helleres Grün beim Hover */
+}
+
+/* Styling für die Anzahl-Auswahl */
+.anzahl-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+    gap: 5px; /* Abstand zwischen den Buttons und dem Eingabefeld */
+}
+
+/* Styling für die Anzahl-Buttons */
+.anzahl-button {
+    background-color: #044535;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.anzahl-button:hover {
+    background-color: #03632e; /* Helleres Grün beim Hover */
+}
+
+/* Styling für das Eingabefeld */
+.anzahl-feld {
+    width: 50px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+/* Entfernt die Pfeile für alle input[type="number"] */
+input[type="number"] {
+    -moz-appearance: textfield; /* Entfernt Pfeile in Firefox */
+    -webkit-appearance: none; /* Entfernt Pfeile in Chrome, Safari, Edge */
+    appearance: none; /* Standardisierte Entfernung */
+}
+
+/* Optional: Entfernt den zusätzlichen inneren Abstand in Firefox */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Entfernt den zusätzlichen Platz */
+}

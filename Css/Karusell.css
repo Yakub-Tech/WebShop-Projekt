@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Gesamte Höhe des Viewports */
+    background-color: #03632e; /* Hintergrundfarbe der gesamten Seite */
+    color: white; /* Standardtextfarbe für Lesbarkeit */
+    box-sizing: border-box; /* Sorgt dafür, dass Padding in die Breite/Höhe einbezogen wird */
+}
+
+.maß {
+    display: flex; /* Flexbox für zentrierte Ausrichtung */
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+    height: calc(100vh - 200px); /* Höhe zwischen Header und Footer, plus Abstand */
+    padding: 20px; /* Abstand innerhalb des Containers */
+    box-sizing: border-box; /* Padding in die Maße einbeziehen */
+}
+
+.Karusell {
+    max-width: 800px; /* Maximale Breite des Karussells */
+    width: 100%; /* Volle Breite innerhalb des Containers */
+    height: 400px; /* Feste Höhe des Karussells */
+    overflow: hidden; /* Verhindert Überlauf */
+    background-color: white; /* Hintergrundfarbe des Karussells */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt für besseren Kontrast */
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Passt die Bilder proportional an */
+    width: 100%; /* Bilder füllen die Breite des Containers */
+    height: 100%; /* Bilder füllen die Höhe des Containers */
+}

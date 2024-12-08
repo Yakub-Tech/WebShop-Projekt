@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Daten und Seiteneinstellungen -->
+    <meta charset="UTF-8"> <!-- Zeichensatz: UTF-8 für Sonderzeichen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Layout -->
+    <title>Karussell Seite</title> <!-- Titel der Seite -->
+
+    <!-- Stylesheets für verschiedene Bereiche der Seite -->
+    <link rel="stylesheet" href="/Css/BackgroundEbene0.css"> <!-- Hintergrund-Styling -->
+    <link rel="stylesheet" href="/Css/Header.css"> <!-- Styling für den Header -->
+    <link rel="stylesheet" href="/Css/LogoLinksHeader.css"> <!-- Styling für das Logo -->
+    <link rel="stylesheet" href="/Css/Footer.css"> <!-- Styling für den Footer -->
+    <link rel="stylesheet" href="/Css/OnlyWarenkorbEinzelnerArtikel.css"> <!-- Styling für einzelne Artikel -->
+    <link rel="stylesheet" href="/Css/Warenkorb.css"> <!-- Styling für die Warenkorb-Seite -->
+    <link rel="stylesheet" href="/Css/WarenkorbLeer.css">
+    <link rel="stylesheet" href="/Css/Karusell.css">
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="/Html/HomeKarusell.html">
+                <img src="/Images/Shop_Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Online-Zahl -->
+        <div class="online-counter">
+            <span> Online: </span>
+        </div>
+
+        <!-- Warenkorb-Anzahl -->
+        <div class="cart-counter">
+            <span> </span>
+        </div>
+
+        <!-- Warenkorb-Button -->
+        <div class="cart-button-container">
+            <a href="/Html/Warenkorb.html" class="cart-button">Warenkorb</a>
+        </div>
+
+        <!-- Konto-Dropdown -->
+        <div class="account-menu-container">
+            <div class="account-menu">
+                <button class="account-button">Mein Konto</button>
+                <div class="dropdown-menu">
+                    <a href="#">Meine Bestellungen</a>
+                    <a href="#">Abmelden</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigationsleiste für Artikelfilter -->
+    <nav class="filter-nav">
+        <ul>
+            <li><a href="AlleArtikel.html">Alle Artikel</a></li>
+            <li><a href="Jacken.html">Jacken</a></li>
+            <li><a href="Hosen.html">Hosen</a></li>
+            <li><a href="Oberteile.html">Oberteile</a></li>
+            <li><a href="Rucksäcke.html">Rucksäcke</a></li>
+        </ul>
+    </nav>
+
+    <!-- Karussell -->
+    <div class="maß">
+        <div class="Karusell">
+            <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+                <!-- Indikatoren -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Karussell-Bilder -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Images/Alpen.jpg" class="d-block w-100" alt="Bild 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Images/alpen2.jpg" class="d-block w-100" alt="Bild 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Images/schnee.png" class="d-block w-100" alt="Bild 3">
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Zurück</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Weiter</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="Impressum.html">Impressum</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Datenschutzerklärung.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
+                <a href="Agb.html" target="_blank" rel="noopener noreferrer">AGB</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Lushame. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

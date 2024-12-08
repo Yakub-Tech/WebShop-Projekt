@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Daten und Seiteneinstellungen -->
+    <meta charset="UTF-8"> <!-- Zeichensatz: UTF-8 für Sonderzeichen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Layout -->
+    <title>Warenkorb</title> <!-- Titel der Seite -->
+
+    <!-- Stylesheets für verschiedene Bereiche der Seite -->
+    <link rel="stylesheet" href="/Css/BackgroundEbene0.css"> <!-- Hintergrund-Styling -->
+    <link rel="stylesheet" href="/Css/Header.css"> <!-- Styling für den Header -->
+    <link rel="stylesheet" href="/Css/LogoLinksHeader.css"> <!-- Styling für das Logo -->
+    <link rel="stylesheet" href="/Css/Footer.css"> <!-- Styling für den Footer -->
+    <link rel="stylesheet" href="/Css/OnlyWarenkorbEinzelnerArtikel.css"> <!-- Styling für einzelne Artikel -->
+    <link rel="stylesheet" href="/Css/Warenkorb.css"> <!-- Styling für die Warenkorb-Seite -->
+</head>
+<body>
+    <!-- Header -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="/Html/HomeKarusell.html">
+                <img src="/Images/Shop_Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Online-Zahl -->
+        <div class="online-counter">
+            <span> Online: </span>
+        </div>
+
+        <!-- Warenkorb-Anzahl -->
+        <div class="cart-counter">
+            <span> </span>
+        </div>
+
+        <!-- Warenkorb-Button -->
+        <div class="cart-button-container">
+            <a href="/Html/Warenkorb.html" class="cart-button">Warenkorb</a>
+        </div>
+
+        <!-- Konto-Dropdown -->
+        <div class="account-menu-container">
+            <div class="account-menu">
+                <button class="account-button">Mein Konto</button>
+                <div class="dropdown-menu">
+                    <a href="#">Meine Bestellungen</a>
+                    <a href="#">Abmelden</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigationsleiste für Artikelfilter -->
+    <nav class="filter-nav">
+        <ul>
+            <li><a href="AlleArtikel.html">Alle Artikel</a></li> <!-- Link zu allen Artikeln -->
+            <li><a href="Jacken.html">Jacken</a></li> <!-- Filter: Jacken -->
+            <li><a href="Hosen.html">Hosen</a></li> <!-- Filter: Hosen -->
+            <li><a href="Oberteile.html">Oberteile</a></li> <!-- Filter: Oberteile -->
+            <li><a href="Rucksäcke.html">Rucksäcke</a></li> <!-- Filter: Rucksäcke -->
+        </ul>
+    </nav>
+
+    <!-- Hauptcontainer für die Warenkorb-Seite -->
+    <div class="warenkorb-container">
+        <!-- Linker Bereich: Artikelanzeige -->
+        <div class="artikel-container">
+            <!-- Beispiel für einen Artikel -->
+            <div class="artikel" data-artikel-id="12345" data-artikel-name="Artikelname 1" data-artikel-preis="29.99">
+                <!-- Bild des Artikels -->
+                <img src="https://via.placeholder.com/150" alt="Artikelbild" class="artikel-bild">
+                <!-- Artikelname -->
+                <h3 class="artikel-name">Artikelname 1</h3>
+                <!-- Artikelnummer -->
+                <h6>Artikelnummer: 12345</h6>
+                <!-- Beschreibung des Artikels -->
+                <p class="artikel-beschreibung">Kurze Beschreibung des Artikels.</p>
+                <!-- Preis des Artikels -->
+                <span class="artikel-preis">29,99 €</span>
+                
+                <!-- Anzahl-Auswahl -->
+                <div class="anzahl-container">
+                    <button class="anzahl-button minus">-</button> <!-- Button zum Verringern der Anzahl -->
+                    <input type="number" class="anzahl-feld" value="1" min="1"> <!-- Eingabefeld für die Anzahl -->
+                    <button class="anzahl-button plus">+</button> <!-- Button zum Erhöhen der Anzahl -->
+                </div>
+                
+                <!-- Button, um den Artikel in den Warenkorb zu legen -->
+                
+            </div>
+        </div>
+
+        <!-- Rechter Bereich: Warenkorb-Details -->
+        <div class="warenkorb-details">
+            <!-- Überschrift für den Warenkorb -->
+            <h2 style="text-align: center;">Warenkorb</h2>
+            <!-- Container für dynamisch eingefügte Artikel-Einträge -->
+            <div class="warenkorb-eintraege"></div>
+            <!-- Footer-Bereich im Warenkorb -->
+            <div class="warenkorb-footer">
+                <!-- Gesamtsumme des Warenkorbs -->
+                <div class="warenkorb-summe">
+                    <p><strong>Gesamtsumme:</strong> 0,00 €</p>
+                </div>
+                <!-- Button zum Checkout -->
+                <button class="checkout-button">Weiter zur Kasse</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer-Container -->
+        <div class="footer-container">
+            <!-- Links zu rechtlichen Informationen -->
+            <div class="footer-links">
+                <a href="Impressum.html">Impressum</a> <!-- Link zum Impressum -->
+                <a href="Kontakt.html">Kontakt</a> <!-- Link zur Kontaktseite -->
+                <a href="Datenschutzerklärung.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> <!-- Link zur Datenschutzerklärung -->
+                <a href="Agb.html" target="_blank" rel="noopener noreferrer">AGB</a> <!-- Link zu den AGB -->
+            </div>
+            <!-- Copyright-Hinweis -->
+            <div class="footer-copy">
+                &copy; 2024 Lushame. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
